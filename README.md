@@ -77,3 +77,4 @@ Ensure to use `--host localhost` on all commands. For example:
 ```bash
 meshtastic --host localhost --nodes
 ```
+<img width="959" alt="itworks" src="https://github.com/LoganNehrbass/meshtastic-stuff/assets/39987450/ddab039c-7b09-4699-97e3-d6fa5e19ed4b">
