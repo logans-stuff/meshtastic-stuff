@@ -1,0 +1,13 @@
+/etc/systemd/system/meshtastic.service
+[Unit]
+Description=Meshtastic Auto-Recover Service
+
+[Service]
+user=root
+WorkingDirectory=/opt/meshtastic
+ExecStart=/usr/sbin/meshtasticd -d /opt/meshtastic
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
