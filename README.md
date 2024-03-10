@@ -38,7 +38,15 @@ wget https://nightly.link/meshtastic/firmware/workflows/main_matrix/master/artif
 
 ```bash
 unzip artifact-deb.zip
-sudo apt install ./meshtasticd_2.* 
+sudo apt install ./meshtasticd_2.*
+```
+
+The package does not seem to specify the need for libulfius.so but is also required,
+```
+meshtasticd: error while loading shared libraries: libulfius.so.2.7: cannot open shared object file: No such file or directory
+```
+```
+sudo apt-get install libulfius-dev
 ```
 
 Standalone start command:
