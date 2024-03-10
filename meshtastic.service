@@ -1,4 +1,4 @@
-/etc/systemd/system/meshtastic.service
+# /etc/systemd/system/meshtastic.service
 [Unit]
 Description=Meshtastic Auto-Recover Service
 
