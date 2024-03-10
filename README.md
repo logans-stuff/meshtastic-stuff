@@ -21,7 +21,7 @@ Repository of Meshtastic information I have gathered.
 
 Two working distros I've tested:
 - Ubuntu Server LTS 22.04
-- Raspbian 64 bit Bullseye.
+- Raspbian 64 bit Bookworm
 
 ### Bullseye Notes
 ```bash
@@ -39,17 +39,6 @@ wget https://nightly.link/meshtastic/firmware/workflows/main_matrix/master/artif
 ```bash
 unzip artifact-deb.zip
 sudo apt install ./meshtasticd_2.* 
-```
-
-Off the bat, libyaml-cpp0.7 is not in the bullseye repos. You will need to add bookworm too. 
-
-```bash
-nano /etc/apt/sources.list
-```
-
-Add the following line:
-```bash
-deb http://deb.debian.org/debian bookworm main contrib non-free
 ```
 
 Standalone start command:
