@@ -21,9 +21,9 @@ Repository of Meshtastic information I have gathered.
 
 Two working distros I've tested:
 - Ubuntu Server LTS 22.04
-- Raspbian 64 bit Bookworm
+- Raspbian 64 bit Bookworm (Note if you select PI3, bookworm will not show on the RPI imager, select no model instead and you can see it and flash like normal. Bookworm works without issue.)
 
-### Bullseye Notes
+### Bookworm Notes
 ```bash
 sudo raspi-config
 ```
@@ -56,9 +56,8 @@ Master meshtasticd configuration directory:
 Managing via CLI:
 
 ```bash
-sudo apt-get install python3-pip
-pip3 install --upgrade pytap2 --no-binary :all: --force-reinstall
-pip3 install --upgrade meshtastic --no-binary :all: --force-reinstall
+pip3 install --upgrade pytap2 --break-system-packages
+pip3 install --upgrade meshtastic --break-system-packages
 ```
 
 Ensure to use `--host localhost` on all commands. For example:
