@@ -1,4 +1,4 @@
-# Meshtastic Information
+# Meshtastic Information (VERY OUTDATED)
 
 Repository of Meshtastic information I have gathered.
 
